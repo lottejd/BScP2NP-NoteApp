@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mini_project_Note_App_np.ItemPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center"
+            BackgroundColor="Black">
+
+            <StackLayout>
+                <Button ImageSource="back.png" Text="Back" Clicked="back" HeightRequest="20" HorizontalOptions="Start" BackgroundColor="Black"></Button>
+                <Button ImageSource="settings.png" HeightRequest="20" HorizontalOptions="End" BackgroundColor="Black"></Button>
+                <Label FontSize="Header" HorizontalOptions="Center" x:Name="Label" TextColor="White"></Label>
+            </StackLayout>
+
+            <Editor TextColor="White"  Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></Editor>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

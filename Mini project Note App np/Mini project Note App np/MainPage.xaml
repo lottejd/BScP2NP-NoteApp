@@ -7,33 +7,23 @@
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
-            VerticalOptions="Center">
+            VerticalOptions="Center"
+            BackgroundColor="Black">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <StackLayout x:Name="header">
+                <Image Source="settings.png" HeightRequest="20" HorizontalOptions="End"></Image>
+                <Label FontSize="Header" HorizontalOptions="Center" TextColor="White">My Notes</Label>
+            </StackLayout>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+            <StackLayout x:Name="stackLayout">
+                <Button Text="Groceries" Clicked="clickBtn" ImageSource="trashbin.png" ContentLayout="Right, 300"></Button>
+                <Button Text="Gift ideas" Clicked="clickBtn" ImageSource="trashbin.png" ContentLayout="Right, 300"></Button>
+                <Button Text="Random notes" Clicked="clickBtn" ImageSource="trashbin.png" ContentLayout="Right, 300"></Button>
+                <Button Text="Plans for world domination" Clicked="clickBtn" ImageSource="trashbin.png" ContentLayout="Right, 300"></Button>
+                <Button Text="Particle accelerator" Clicked="clickBtn" ImageSource="trashbin.png" ContentLayout="Right, 300"></Button>
+            </StackLayout>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+            <Button Text="+" Clicked="Add" BackgroundColor="Black" BorderColor="Gray"></Button>
 
         </VerticalStackLayout>
     </ScrollView>
